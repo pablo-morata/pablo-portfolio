@@ -1,0 +1,43 @@
+// sass --watch dist/styles/main.scss:dist/styles/main.css
+body{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    
+}
+.nav{
+    h1, p {
+        cursor: pointer;
+    }
+}
+.gallery{
+    margin-top: 50px;
+    .full-lengh-portraits-imgs{
+        display: none;
+        &.show{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        img{
+            width: 300px;
+        }
+        
+    }
+    .portraits-imgs{
+        display: none;
+        &.show{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        img{
+            width: 300px;
+        }
+    }
+    .contact-info{
+        display: none;
+        &.show{
+            display: block;
+        }
+    }
+}
