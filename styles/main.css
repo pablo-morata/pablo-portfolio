@@ -42,6 +42,8 @@ body {
 }
 .gallery .portraits-imgs .img p {
   display: none;
+  line-height: 10px;
+  font-size: 14px;
 }
 .gallery .portraits-imgs .img p.es {
   color: gray;
