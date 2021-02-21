@@ -1,44 +1,111 @@
 // sass --watch dist/styles/main.scss:dist/styles/main.css
-body{
-    display: grid;
-    grid-template-columns: 1fr 5fr;
-    
+body {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
 }
-.nav{
-    margin-left: 40px;
-    h1, p {
-        cursor: pointer;
-    }
+.nav {
+  margin-left: 40px;
+  p {
+    cursor: pointer;
+  }
 }
-.gallery{
-    margin-top: 50px;
-    .full-lengh-portraits-imgs{
-        display: none;
-        &.show{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-        }
+.gallery {
+  margin-top: 50px;
+  width: 70%;
 
-        img{
-            width: 300px;
-        }
-        
+  .portraits-imgs {
+    display: none;
+    &.show {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 5%;
     }
-    .portraits-imgs{
+    &.hide{
         display: none;
-        &.show{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-        }
+    }
 
+    .img {
+      
+      &.show-big {
+
+        display: block;
         img{
-            width: 300px;
+            height: 800px;
         }
-    }
-    .contact-info{
-        display: none;
-        &.show{
+        p{
             display: block;
         }
+      }
+      &.hide {
+        display: none;
+      }
+
+      img{
+        height: 300px;
+      }
+      p{
+          display: none;
+
+          &.es{
+              color: gray;
+          }
+      }
     }
+  }
+
+  .full-lengh-portraits-imgs {
+    display: none;
+    &.show {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 5%;
+    }
+    &.hide{
+        display: none;
+    }
+
+    .img {
+      
+      &.show-big {
+
+        display: block;
+        img{
+            height: 800px;
+        }
+        p{
+            display: block;
+        }
+      }
+      &.hide {
+        display: none;
+      }
+
+      img{
+        height: 400px;
+      }
+      p{
+          display: none;
+
+          &.es{
+              color: gray;
+          }
+      }
+    }
+  }
+ 
+
+  .contact-info {
+    display: none;
+
+    &.show {
+      display: block;
+    }
+    &.hide{
+        display: none;
+    }
+
+    img{
+        width: 30px;
+    }
+  }
 }
