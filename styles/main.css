@@ -1,0 +1,43 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+
+.nav {
+  margin-left: 40px;
+}
+.nav h1, .nav p {
+  cursor: pointer;
+}
+
+.gallery {
+  margin-top: 50px;
+}
+.gallery .full-lengh-portraits-imgs {
+  display: none;
+}
+.gallery .full-lengh-portraits-imgs.show {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.gallery .full-lengh-portraits-imgs img {
+  width: 300px;
+}
+.gallery .portraits-imgs {
+  display: none;
+}
+.gallery .portraits-imgs.show {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.gallery .portraits-imgs img {
+  width: 300px;
+}
+.gallery .contact-info {
+  display: none;
+}
+.gallery .contact-info.show {
+  display: block;
+}
+
+/*# sourceMappingURL=main.css.map */
